@@ -40,12 +40,12 @@ public class RemoteControlApp {
 	}
 
 	public static void initialMessage() {
-		System.out.println("To begin, turn on the remote control,enter \"ON\" to turn on");
 		System.out.println("PLease Key in your Option: ");
 		System.out.println("*****ON    OFF*****");
 		System.out.println("*****0   1   2*****");
 		System.out.println("*****3   4   5*****");
 		System.out.println("*****6  7  8  9****");
+		System.out.println("To begin, turn on the remote control,enter \"ON\" to turn on");
 
 	}
 
