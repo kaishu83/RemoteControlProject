@@ -12,9 +12,9 @@ public class RemoteControlApp {
 
 		}
 		turningOn();
-		pressButton();
+		
 
-		do {
+		while (!opt.equals("OFF")) {
 			opt = input.next();
 			switch (opt) {
 				case "0":
@@ -29,30 +29,38 @@ public class RemoteControlApp {
 				case "9":
 					pressButton();
 					break;
+				case "OFF": break;
 				default:
 					System.out.println("Command not recognized");
-					System.out.println("Please enter a number,enter \"OFF\" to get out");
+					System.out.println("Please enter a number,enter \"OFF\" to turn off");
 					break;
 			}
-		} while (!opt.equals("OFF"));
+		} 
 		turningOff();
 	}
 
 	public static void initialMessage() {
-		System.out.println("To begin, turn on the remote control(\"Enter ON\")");
+		System.out.println("To begin, turn on the remote control,enter \"ON\" to turn on");
+		System.out.println("PLease Key in your Option: ");
+		System.out.println("*****ON    OFF*****");
+		System.out.println("*****0   1   2*****");
+		System.out.println("*****3   4   5*****");
+		System.out.println("*****6  7  8  9****");
 
 	}
 
 	public static void pressButton() {
 		System.out.println("BOOP");
-		System.out.println("Please enter a number,enter \"OFF\" to get out");
+		System.out.println("Please enter a number,enter \"OFF\" to turn off");
 	}
 
 	public static void turningOff() {
-		System.out.println("Turning off");
+		System.out.println("TURNING OFF");
 	}
 
 	public static void turningOn() {
 		System.out.println("TURNING ON...");
+		System.out.println("Please enter a number,enter \"OFF\" to turn off");
 	}
+	
 }
